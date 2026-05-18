@@ -33,9 +33,8 @@
 # ---------
 # Despite being vectorized, the code is not fully optimized (not parallelized and makes no use of 
 # GPU if available, e.g., using CuPy) for numerical lifting. On a modern computer, it should run 
-# acceptably for K = 12, say, but as the graph connectivity increases (increasing K, N or both) 
-# the execution will clearly slow down. You are free to modify the code to suit your available 
-# computational resources.
+# acceptably for K up to 1200, but as the graph size increases the execution will markedly slow
+# down. You are free to modify the code to suit your available computational resources.
 #
 # The code generates a publication-ready matplotlib rendering of the results as one collage graph
 # (merging four individual graphs, also provided for insertion in 2-column text layouts) and two 
